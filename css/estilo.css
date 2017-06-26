@@ -384,3 +384,6 @@ body{
 #conteudo .post-lista ul li:hover a{
     color: white;
 }
+#conteudo .empresa{
+    margin-top: 50px;
+}
