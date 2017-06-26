@@ -1,0 +1,386 @@
+/* cabecalho */
+body{
+    font-family: 'Nunito', sans-serif;
+}
+.nm{
+    margin: 0 !important;
+}
+.np{
+    padding: 0 !important;
+}
+.suave, .suave:hover{
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+}
+.click{
+    cursor: pointer;
+}
+.mini-title{
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+/*****TOPO*****/
+
+#topo{
+    width: 100%;
+    height: 170px;
+    border-top: 4px solid black;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, .08);
+}
+#topo .logo{
+    height: 100px;
+}
+#topo .logo h1{
+    font-size: 26px;
+    line-height: 100px;
+    margin: 0;
+    text-align: center;
+}
+#topo .logo h1 img{
+    height: 80px;
+    margin-top: 10px;
+}
+#topo .cidade,
+#topo .telefone,
+#topo .menu{
+    height: 100px;
+}
+#topo .cidade h6,
+#topo .telefone h6{
+    line-height: 100px;
+}
+#topo .cidade h6 span{
+    color: #DB4864;
+}
+#topo .menu ul li{
+    line-height: 100px;
+    display: inline-block;
+}
+#topo .menu ul li a{
+    display: block;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    padding: 0 10px;
+}
+#topo .menu ul li:hover a{
+    color: #DB4864;
+}
+#topo .menu ul li.active a{
+    color: #DB4864;
+}
+#topo .menu ul li.active a:before{
+    content: "";
+    width: 20px;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    position: absolute;
+    top: 70%;
+    left: calc(50% - 10px);
+}
+
+
+/*****CONTEUDO*****/
+
+#conteudo{
+    margin-top: -65px;
+}
+#conteudo aside{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, .08);
+}
+#conteudo aside .title{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 40px;
+}
+#conteudo aside ul{
+    overflow: hidden;
+}
+#conteudo aside ul li{
+    width: 50%;
+    float: left;
+    font-weight: bold;
+}
+#conteudo aside ul li img{
+    width: 40px;
+    display: block;
+    padding: 10px 0;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#conteudo aside ul li a{
+    display: block;
+    color: #888;
+    text-align: center;
+    font-size: 14px;
+}
+#conteudo aside ul li a:hover{
+    color: #DB4864;
+}
+#conteudo .sub-topo{
+    height: 50px;
+}
+#conteudo .sub-topo .busca{
+    width: calc(100% - 220px);
+    height: 50px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 5px;
+    position: relative;
+    padding-left: 55px;
+    border: 1px solid #DDD;
+}
+#conteudo .sub-topo .busca i{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#conteudo .sub-topo .busca input{
+    margin: 0;
+    height: 50px;
+    line-height: 50px;
+    border: 0;
+    box-shadow: none;
+}
+#conteudo .sub-topo .carrinho{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    float: left;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    background-color: #DB4864;
+}
+#conteudo .sub-topo .carrinho span{
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 5px 5px 0;
+    background-color: rgba(0, 0, 0, .1)
+}
+#conteudo .produtos{}
+#conteudo .produtos-topo{
+    margin-top: 35px;
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 10px;
+}
+#conteudo .produtos-topo h5{
+    height: 50px;
+    margin: 0;
+    line-height: 50px;
+}
+#conteudo .produtos-topo h5 span{
+    font-size: 14px;
+    color: grey;
+}
+#conteudo .produtos-topo h5 span i{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 24px;
+    display: inline-block;
+    margin: 5px;
+}
+#conteudo .produtos-topo h5 span i:hover{
+    background-color: #CCC;
+    color: white;
+}
+#conteudo .produtos-lista{
+    overflow: hidden;
+}
+#conteudo .produtos-lista ul li{
+    width: calc(25% - 30px);
+    margin: 15px;
+    border: 1px solid #DDD;
+    float: left;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px;
+}
+#conteudo .produtos-lista ul li.vermelho:hover{
+    background-color: #DB4864;
+}
+#conteudo .produtos-lista ul li.verde:hover{
+    background-color: #72BD9C;
+}
+#conteudo .produtos-lista ul li.amarelo:hover{
+    background-color: #F1DB92;
+}
+#conteudo .produtos-lista ul li.laranja:hover{
+    background-color: #F0AA7C;
+}
+#conteudo .produtos-lista ul li a{
+    color: black;
+}
+#conteudo .produtos-lista ul li:hover a{
+    color: white;
+}
+#conteudo .produtos-lista ul li .produto-imagem{
+    width: 100%;
+    height: 170px;
+    position: relative;
+    overflow: hidden;
+}
+#conteudo .produtos-lista ul li .produto-imagem img{
+    width: 100%;
+    min-height: 170px; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+#conteudo .produtos-lista ul li h6.produto-nome{
+    font-size: 18px;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+#conteudo .produtos-lista ul li h6.produto-preco{
+    font-size: 14px;
+    font-weight: bold;
+    color: grey;
+}
+#conteudo .produtos-lista ul li:hover h6.produto-preco{
+    color: white;
+}
+
+#conteudo .pedidos{
+    width: 350px;
+    position: fixed;
+    bottom: calc(-357px);
+    left: 40px;
+    background-color: white;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, .08);
+    padding: 20px;
+    padding-top: 80px;
+    border-radius: 10px 10px 0 0;
+    z-index: 10;
+}
+#conteudo .pedidos.active{
+    bottom: 0;
+}
+#conteudo .pedidos h6{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    background-color: #DB4864;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 20px;
+    line-height: 50px;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+}
+#conteudo .pedidos input,
+#conteudo .pedidos textarea{
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+#conteudo .pedidos textarea{
+    height: 100px;
+    margin-bottom: 20px;
+}
+#conteudo .pedidos input:focus,
+#conteudo .pedidos textarea:focus{
+    border: 1px solid #DB4864;
+    box-shadow: none;
+    outline: none;
+}
+#conteudo .pedidos button{
+    width: 150px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: #DB4864;
+}
+
+
+#conteudo .post{}
+#conteudo .post-lista{
+    margin-top: 50px;
+}
+#conteudo .post-lista ul{
+    overflow: hidden;
+}
+#conteudo .post-lista ul li{
+    width: calc(33.333% - 30px);
+    margin: 15px;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    padding: 15px;
+    padding-bottom: 5px;
+}
+#conteudo .post-lista ul li .post-imagem{
+    height: 130px;
+    overflow: hidden;
+    position: relative;
+}
+#conteudo .post-lista ul li .post-imagem img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+#conteudo .post-lista ul li.verde:hover{
+    background-color: #72BD9C;
+}
+#conteudo .post-lista ul li h6.post-nome{
+    font-size: 18px;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding: 10px 0;
+}
+#conteudo .post-lista ul li a{
+    color: #000;
+}
+#conteudo .post-lista ul li:hover a{
+    color: white;
+}
